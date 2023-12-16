@@ -35,14 +35,14 @@ public class Usuariohub extends JFrame implements ActionListener {
 
         jLabel2.setText("Tiene opciones limitadas, para mas informacion hable con un administrador");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Consultas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("jButton2");
+        jButton2.setText("base de datos(limitada)");
 
         GroupLayout layout = new javax.swing.GroupLayout(panel);
         panel.setLayout(layout);

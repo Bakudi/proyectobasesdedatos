@@ -107,7 +107,6 @@ public class Login extends JFrame implements ActionListener {
                 Usuariohub newframe = new Usuariohub();
                 newframe.setVisible(true);
                 this.dispose();
-
             }
 
         }
