@@ -35,7 +35,7 @@ public class Adminhub extends JFrame implements ActionListener {
         jButton1.setText("Consultas");
         jButton1.addActionListener(this);
 
-        jButton2.setText("registros");
+        jButton2.setText("Login");
         jButton2.addActionListener(this);
 
         jLabel2.setText("Tiene todas las opciones disponibles");
@@ -79,32 +79,30 @@ public class Adminhub extends JFrame implements ActionListener {
                 .addContainerGap())
         );
         add(panel);
-    }                     
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-    }                                        
+    }                                                            
 
 
-    // Variables declaration - do not modify                     
+                     
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    // End of variables declaration                   
-    @Override
+                  
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+        if (e.getSource() == jButton1) {
+           Consultas ventana = new Consultas();
+           ventana.setVisible(true);
+           this.dispose();
+        } else if(e.getSource() == jButton2){
+            Login ventana = new Login();
+            ventana.setVisible(true);
+            this.dispose();
+        } else if(e.getSource() == jButton3){
+            BDadmin ventana = new BDadmin();
+            ventana.setVisible(true);
+            this.dispose();
+        }
     }
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(() -> {
