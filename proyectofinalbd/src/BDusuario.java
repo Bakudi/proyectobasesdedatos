@@ -37,8 +37,10 @@ public class BDusuario extends JFrame implements ActionListener{
         jLabel1.setText("Inserte la Accion a realizar");
 
         jButton1.setText("volver");
+        jButton1.addActionListener(this);
 
         jButton2.setText("Aceptar");
+        jButton2.addActionListener(this);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(panel);
         panel.setLayout(layout);

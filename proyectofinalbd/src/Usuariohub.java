@@ -31,7 +31,7 @@ public class Usuariohub extends JFrame implements ActionListener {
         jLabel2 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
-        jLabel1.setText("¡Bienvenido Administrador!");
+        jLabel1.setText("bienvenido usuario");
 
         jButton1.setText("Consultas");
         jButton1.addActionListener(this);
@@ -39,7 +39,7 @@ public class Usuariohub extends JFrame implements ActionListener {
         jButton2.setText("Login");
         jButton2.addActionListener(this);
 
-        jLabel2.setText("Tiene todas las opciones disponibles");
+        jLabel2.setText("Tiene Opciones limitadas");
 
         jButton3.setText("base de datos");
         jButton3.addActionListener(this);

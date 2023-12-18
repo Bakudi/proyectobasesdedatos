@@ -40,6 +40,7 @@ public class Buscar extends JFrame implements ActionListener {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "encargo", "productoterminado", "uniforme", "cliente", "colegio", "materiaprima", "proveedor" }));
 
         jButton1.setText("volver");
+        jButton1.addActionListener(this);
         jButton1.setActionCommand("volver");
 
         jButton2.setText("Aceptar");
