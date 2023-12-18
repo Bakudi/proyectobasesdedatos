@@ -1,14 +1,17 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Databasemanager {
-    private static final String URL = "jdbc:postgresql://localhost:5432/trabajofinal";
-    private static final String USER = "postgres";
-    private static final String PASSWORD = "Animelove.25";
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+        String url = "jdbc:postgresql://localhost:5432/midb?user=postgres&password=Animelove.25";
+        return DriverManager.getConnection(url);
+    }
+
+    public static void main(String[] args) throws SQLException {
+        Connection conn = getConnection();
+        System.out.println("Conectado a la base de datos postgresql!");
+        conn.close();
     }
 }
+
 
